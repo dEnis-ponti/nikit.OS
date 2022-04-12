@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изображения</title>
+</head>
+<body>
+  <img src="https://i.ytimg.com/vi/l5nWowcTEpo/maxresdefault.jpg" alt="Danny LEE, БОГАтырь!11" style="height: 200px;">
+  <h3>Альтернатива черезе Picture</h3>
+  <picture>
+    <source media="(max-width: 1020px)" srcset="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/61/616467a04e81e23b2ffd7b96e75e517f9703529d_medium.jpg" >
+    <source media="(max-width: 1440px)" srcset="/12.04/sXCS3FMWcug.jpg" >
+    <!-- порядок сурсов ВАЖЕН!!! -->
+    <img src="https://i.ytimg.com/vi/l5nWowcTEpo/maxresdefault.jpg" alt="Danny LEE, БОГАтырь!11" style="max-width: 1440px;">
+  </picture>
+  <figure>
+    <img src="/12.04/ЧТО-ТАКОЕ-КРАСОТА.JPG" alt="попс" >
+    <figcaption>
+      На данном изображении белка-летяга
+    </figcaption>
+  </figure>
+</body>
+</html>
