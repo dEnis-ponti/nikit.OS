@@ -1,0 +1,22 @@
+h1 {
+  color: #000;
+}
+h1 {
+  color: aqua;
+}
+h1 {
+  color: red;
+}
+
+#main-biba {
+  color: olive;
+}
+
+.papa-genetic {
+  color: blue;
+}
+
+[mama] {
+  /* color: violet !important; argh, turn off111!11! */
+  color: violet;
+}
