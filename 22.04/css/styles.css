@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(215, 250, 244);
+}
+.unlucky-dot { 
+  background-color: pink;
+  font-size: 50px;
+  display: block;
+  width: 30px;
+}
+#accent {
+  text-decoration: underline;
+  font-family: 'Arial' serif;
+  font-size: 88px;
+}
+
+.block1, .block4 {
+  color: orange;
+  font-weight: bold;
+}
+.block:nth-last-child(2) {
+  color: red;
+}
+.block:not(:nth-child(3)):not(:first-child):not(:last-child) {
+  font-size: 7px;
+}
+div.blue-style {
+  color:slateblue;
+}
+
+div .red-sparrow {
+  color: crimson;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.papa > .son {
+  color:aqua;
+}
+
+.grandson {
+  color: initial;
+}
