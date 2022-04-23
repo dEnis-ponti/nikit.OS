@@ -1,0 +1,61 @@
+.text__block_em {
+  font-size: 24px;
+  width: 30em;
+}
+.text__headline_em {
+  font-size: 1em;
+}
+.text__article_em {
+  font-size: 0.55em;
+}
+.text__article_em span {
+  font-size: 1.55em;
+}
+.text__block_rem {
+  font-size: 1rem;
+}
+.text__headline_rem {
+  font-size: 2rem;
+}
+.text__article_rem {
+  font-size: 0.75rem;
+}
+.text__article_rem span {
+  font-size: 1.75rem;
+}
+.percentage-experience {
+  margin-top: 10rem;
+}
+.parent-block {
+  width: 400px;
+  height: 15rem;
+  background-color: coral;
+  position: relative;
+}
+.parent-block__child-block:first-child {
+  width: 10%;
+  height: 10%;
+  background-color: darkcyan;
+}
+.parent-block__child-block:last-child {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: blueviolet;
+}
+.viewport-test {
+  margin-top: 10vh;
+}
+.vh-block {
+  width: 30vh;
+  height: 10vh;
+  background-color: brown;
+}
+.vw-block {
+  width: 30vw;
+  height: 10vw;
+  background-color: chocolate;
+}
