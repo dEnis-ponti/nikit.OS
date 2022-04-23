@@ -1,0 +1,34 @@
+.headline {
+  color: rgb(250, 195, 41);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.subline {
+  line-height: 1.25rem;
+  width: 490px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  text-align: center;
+}
+.subline span {
+  font-style: italic;
+}
+.subline .accent {
+  text-decoration: underline wavy;
+}
+.text {
+  text-shadow: 1px -1px 8px tomato;
+  width: 490px;
+  text-indent: 49px;
+  letter-spacing: 0.21rem;
+  word-spacing: 1rem;
+}
+.text .first-letter {
+  color: maroon;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.first-line {
+  white-space: nowrap;
+}
