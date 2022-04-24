@@ -32,3 +32,20 @@
 .first-line {
   white-space: nowrap;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-family: SovietFont;
+}
+
+.soviet-warning {
+  background-color: crimson;
+}
+.soviet-warning_positioning {
+  margin-top: 5rem;
+  display: block;
+  padding: 2rem;
+}

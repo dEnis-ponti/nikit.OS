@@ -1,0 +1,11 @@
+@font-face {
+  font-family: SovietFont;
+  src: 
+    local("soviet font"),
+    url(/23.04/fonts/soviet-font.woff) format('woff'),
+    url(/23.04/fonts/soviet-font.woff2) format('woff2'),
+    url(/23.04/fonts/soviet-font.svg) format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
