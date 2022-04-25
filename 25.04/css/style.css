@@ -1,0 +1,44 @@
+.content-1__block_block {
+  width: 300px;
+  padding: 20px;
+  background-color: royalblue;
+  margin-bottom: 70px;
+}
+.content-1__block_box-sizing-example{
+  box-sizing: content-box;
+  margin-top: 50px;
+  padding: 20px;
+  width: 300px;
+  background-color: hotpink;
+}
+.content-1__block_inline-example {
+  display: inline;
+  margin-top: 70px;
+  padding: 50px;
+  min-height: 200px;
+}
+.content-1__block_image {
+  margin: 50px;
+  display: block;
+}
+.content-1__block_image-2 {
+  min-height: 300px;
+}
+.content-2__block_overflow {
+  overflow: scroll;
+  max-height: 200px;
+  max-width: 400px;
+}
+
+.content-2__block_border-cock {
+  border-top: 5px dotted thistle;
+  margin-top: 40px;
+  border-radius: 50%;
+  max-width: 100vmin;
+  padding-top: 40px;
+  box-shadow: 0 -10px 10px salmon;
+  opacity: 0.95;
+}
+.content-2__block_border-cock span {
+  visibility: hidden;
+}
