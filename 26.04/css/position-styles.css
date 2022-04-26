@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 100px 15px;
+  height: 100vh;
+}
+
+.block-parent {
+  margin: 0 auto;
+  border: 10px solid wheat;
+  height: 70vh;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+}
+
+.block-parent__block-child {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  height: 40%;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.842);
+}
+
+.block-parent__block-child:nth-child(1) {
+  background-color: tomato;
+  position: relative;
+  top: 10px;
+}
+.block-parent__block-child:nth-child(2) {
+  background-color: royalblue;
+  position: absolute;
+  /* ^ ^ ^ СъАгриться на ближайший Родительский Relative */
+  left: 0;
+  bottom: 0;
+}
+.block-parent__block-child:nth-child(3) {
+  background-color: sandybrown;
+  position: fixed;
+  right: 0;
+}
+.block-parent__block-child:nth-child(4) {
+  background-color: springgreen;
+}
+.block-parent__block-child:nth-child(5) {
+  background-color: plum;
+  position: sticky;
+  top: 0;
+}
