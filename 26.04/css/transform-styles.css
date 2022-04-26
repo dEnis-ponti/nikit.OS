@@ -1,0 +1,68 @@
+.presentation {
+  margin: 0 auto;
+  height: 100%;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  align-items: center;
+}
+.presentation__example {
+  padding: 50px 0;
+}
+.get-out {
+  width: 100%;
+  margin: 4rem auto;
+  border: 0.1rem dotted #000;
+}
+.presentation__example:not(:first-child) {
+  margin-top: 0rem;
+}
+.presentation__title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 7rem;
+}
+.presentation__blocks {
+  margin-top: 3rem;
+  display: flex;
+  max-width: 1000px;
+}
+.blocks__object {
+  width: 50%;
+  height: 300px;
+}
+.blocks__object_active {
+  background-color: orange;
+}
+.blocks__object_passive {
+  background-color: blueviolet;
+}
+
+.translate .blocks__object_active {
+  transform: translate(-10%, 10%);
+}
+
+.translate .blocks__object_passive {
+  transform: translateX(30%);
+}
+
+.rotate .blocks__object_active {
+  transform: rotate(45deg);
+}
+
+.scale .blocks__object_active {
+  transform: scale(1.25);
+}
+
+.scale .blocks__object_passive {
+  transform: scaleX(.5);
+}
+
+.skew .blocks__object_active {
+  transform: skew(70deg, 10deg);
+}
+
+.skew .blocks__object_passive {
+  transform-origin: 5% 15%;
+  transform: skewY(50deg);
+}
