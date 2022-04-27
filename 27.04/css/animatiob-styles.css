@@ -1,0 +1,72 @@
+.wrapper {
+  padding: 100px;
+  background-color: silver;
+  height: 100%;
+}
+.kunteynir {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 35%,#207cca 61%,#207cca 71%,#1e5799 100%);
+}
+.piston-handle-cap {
+  position: absolute;
+  width: 0.75rem;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  height: 125%;
+  left: -5%;
+  top: -12%;
+  background-color: black;
+}
+.piston-handle {
+  position: absolute;
+  width: 5%;
+  height: 10%;
+  left: -5%;
+  top: calc(50% - 10%);
+  background-color: rgb(23, 23, 23);
+}
+.piston {
+  background-color: darkblue;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  animation: trainspotting 3s infinite alternate,
+  color-fill 3s forwards;
+  /* animation-fill-mode: both; */
+}
+.piston:hover {
+    animation-play-state: paused;
+}
+.spine {
+  position: absolute;
+  width: 5%;
+  height: 2.5%;
+  right: -5%;
+  background-color: black;
+  top: calc(50% - 2.5%);
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* -------Anamation-styles------- */
+
+@keyframes trainspotting {
+  from {
+    left: 0;
+  }
+  50% {
+    left: 49%;
+    border-radius: 5%;
+  }
+  to {
+    left: calc(100% - 300px);
+  }
+}
+
+@keyframes color-fill {
+  100% {
+    background-color: crimson;
+  }
+}
