@@ -1,0 +1,99 @@
+body {
+  background-color: cadetblue;
+  font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  padding: 50px;
+  min-height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container__elem_positioning:not(:first-child) {
+  margin-top: 4rem;
+}
+
+.block {
+  width: 10rem;
+  height: 6rem;
+  background-color: hsl(70, 25%, 50%);
+}
+
+.link {
+  background-color: hsl(295, 55%, 50%);
+  padding: 2rem;
+  width: fit-content;
+  text-align: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* pseudo-elems-magic */
+
+.block-wrapper {
+  position: relative;
+}
+
+.block-wrapper::before {
+  content: "*?!";
+  display: inline-block;
+  width: 2rem;
+  height: 4rem;
+  background-color: hsl(70, 25%, 50%);
+}
+.block-wrapper::after {
+  content: "?!*";
+  display: inline-block;
+  width: 2rem;
+  height: 8rem;
+  background-color: hsl(70, 25%, 50%);
+  position: absolute;
+  left: 10rem;
+  bottom: -2rem;
+  transform: rotate(90deg);
+}
+
+.list__item {
+  line-height: 2;
+}
+
+.list__item::before {
+  content: "✡";
+  color: blue;
+  background-color: #fff;
+  margin-right: 0.2rem;
+  padding: 0.1rem;
+  border-radius: 50%;
+}
+
+.link::after {
+  margin-top: 1rem;
+  content: "🗙";
+  font-size: 4rem;
+  color: rgba(220, 20, 60, 0.499);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: transparent url(../../10.04/bebe.JPG) no-repeat center / 100%;
+  transition: 1s;
+}
+.link:hover::after {
+  content: "☭";
+  transition: 1s;
+}
+
+.text::first-line {
+  text-transform: uppercase;
+}
+.text::first-letter {
+  font-size: 10rem;
+}
