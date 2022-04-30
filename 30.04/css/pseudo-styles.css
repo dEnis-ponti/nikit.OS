@@ -1,0 +1,90 @@
+body {
+  background-color: bisque;
+}
+.wrapper {
+  padding: 50px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_clickable-elems {
+  padding: 5rem 0;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link, .button {
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: bold;
+  border: 5px solid #000;
+  padding: 3rem 6rem;
+  box-shadow: 0 0 5px #000;
+  background-color: #ff9f29;
+}
+
+.container_field {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Century Gothic", Arial, sans-serif;
+}
+.input-label {
+  margin-bottom: 1rem;
+}
+.text-field {
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 2.4rem;
+}
+
+.container_list {
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 2.4rem;
+}
+
+
+/* pseudo-experiments */
+
+.link:visited {
+  background-color: #8f4f00;
+}
+
+.link:hover {
+  background-color: #ffb65c;
+}
+
+.link:active {
+  background-color: #ffe3c2;
+}
+
+:focus {
+  box-shadow: 0 0 5px rgb(100, 100, 100);
+  transition: box-shadow 0.5s;
+}
+
+.list__item {
+  transition: all 1s;
+}
+
+.list__item:first-child::first-letter {
+  font-size: calc(2.4rem * 2);
+  color: crimson;
+}
+.list__item:nth-child(even) {
+  font-style: italic;
+}
+.list__item:nth-child(3n) {
+  text-decoration: underline;
+}
+.list__item:hover {
+  transform: scale(1.15) translateX(3.25rem);
+  transition: all 1s;
+  cursor: pointer;
+  line-height: 1.15;
+}
